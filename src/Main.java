@@ -114,9 +114,9 @@ public class Main implements ActionListener{
     }
 
     static void addition(){
-        //read 2 input and return a addition of the number
-        //read 2 numbers and return a addition of the previous number
-        //read multiple input and return the total summation\
+       //read 2 input and return a addition of the number
+       //read 2 numbers and return a addition of the previous number
+       //read multiple input and return the total summation\
 
     }
 
@@ -170,16 +170,24 @@ public class Main implements ActionListener{
 
             switch(operator){
                 case '+' :
-                    result =num1+num2;
+                    Function F1 = new Function();
+                    result = F1.add(num1, num2);
+                    //result =num1+num2;
                     break;
                 case'-':
-                    result = num1-num2;
+                    Function F2 = new Function();
+                    result = F2.subtract(num1, num2);
+                    //result = num1-num2;
                     break;
                 case '*':
-                    result = num1*num2;
+                    Function F3 = new Function();
+                    result = F3.multiply(num1, num2);
+                    //result = num1*num2;
                     break;
                 case '/':
-                    result = num1/num2;
+                    Function F4 = new Function();
+                    result = F4.divide(num1, num2);
+                    //result = num1/num2;
                     break;
 
             }
@@ -209,10 +217,9 @@ public class Main implements ActionListener{
             temp*= -1;
             field.setText(String.valueOf(temp));
 
+            }
         }
-    }
 
 
 
 }
-
